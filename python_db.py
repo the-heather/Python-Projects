@@ -10,7 +10,7 @@
 
 import sqlite3
 
-conn = sqlite3.connect('textFiles')
+conn = sqlite3.connect('textFiles.db')
 
 fileList = ('information.docx','Hello.txt','myImage.png','myMovie.mpg','World.txt','data.pdf','myPhoto.jpg')
 
@@ -22,7 +22,7 @@ with conn:
         )")    
     conn.commit()
 
-conn = sqlite3.connect('textFiles')
+conn = sqlite3.connect('textFiles.db')
 #loops through each object in the tuple to find .txt files
 for x in fileList:
     if x.endswith('.txt'):
