@@ -5,10 +5,9 @@
 #
 # Purpose:   TTA - Python Course, created a class that utilizes the concept of abstraction 
 #            where the class contains  at least one abstract method and one regular method.
-#            Created a child class that defines the implementation of its parents abstract method.
-#            Create an object that utilizes both the parent and child methods.
-#            Add comments throughout your Python explaining your code.
-
+#            Created a child class that defines the implementation of its parents abstract method, 
+#            Lastly, created an object that utilizes both the parent and child methods.
+#           
 #
 
 from abc import ABC, abstractmethod
