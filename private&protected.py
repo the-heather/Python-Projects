@@ -26,9 +26,9 @@ class one:
 
 test = one()
 #call to private varabile
-print(test.getPrivate)
+test.getPrivate
 #call to protected varabile
-print(test.getProtected)
+test.getProtected
 
 
 
