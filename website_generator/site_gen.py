@@ -47,22 +47,12 @@ class ParentWindow(Frame):
 
     
         def createPage(self):
-            #beginning of webpage
-            text1 = '''
-            <html>\n''',''' <body>\n'''
-            #retrives user input 
-            text2 = self.txt_web.get("1.0",'end')
-            #end of webpage
-            text3 = '''
-                </body>\n
-            </html>'''
+            userInput = self.txt_web.get("1.0",'end')
+            all = ('''<html>\n,<body>\n'''+ userInput + "\n" + '''</body>\n, </html>''')
             #opens our html file
             file = open("basic_html.html", "w")
             #replace our html file with our new input
-            file.writelines(text1)
-            file = open("basic_html.html", "a")
-            file.append(text2)
-            file.append(text3)
+            file.writelines(all)
             webbrowser.open("basic_html.html", new=2, autoraise=True)
     
 
