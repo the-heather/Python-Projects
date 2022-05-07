@@ -19,17 +19,11 @@ class one:
         self.__private = 5
 
     def getPrivate(self):
-        print(self.__private)
-    
-    def getProtected(self):
-        print(self._protected)
+        return(self.__private) 
 
 test = one()
-#call to private varabile
-test.getPrivate
 #call to protected varabile
-test.getProtected
-
-
-
+print(test._protected)
+#call to private varabile
+print(test.getPrivate())
 
