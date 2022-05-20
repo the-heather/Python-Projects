@@ -2,7 +2,7 @@
 These are practice projects written in Python. They use various modules and frameworks such as tkinter, sqlite3, and Django.
 
 ## Projects
--Check and transfer GUI
+- Check and transfer GUI
 - Django Checkbook
 - Class Management App
 - Room Service Ordering App
