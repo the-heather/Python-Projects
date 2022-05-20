@@ -1,5 +1,5 @@
-# Tython-Projects
-These are projects written in Python. They use various modules and frameworks such as tkinter, sqlite3, and Django.
+# Python-Projects
+These are practice projects written in Python. They use various modules and frameworks such as tkinter, sqlite3, and Django.
 
 ## Projects
 -Check and transfer GUI
