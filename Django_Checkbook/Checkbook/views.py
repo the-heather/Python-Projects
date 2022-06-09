@@ -15,9 +15,8 @@ def create_account(request):
     form = AccountForm(data=request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
-            pk = request.POST['account']
             form.save()
-            return balance(request, pk)
+            return redirect('index')
     content = {'form': form}
     return render(request, 'checkbook/CreateNewAccount.html', content)
 

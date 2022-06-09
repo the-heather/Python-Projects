@@ -11,7 +11,9 @@ class Account(models.Model):
     def __str__(self):
         return self.first_name + ' ' + self.last_name
 
+
 TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
+
 
 class Transaction(models.Model):
     date = models.DateField()
@@ -21,8 +23,3 @@ class Transaction(models.Model):
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
     Transactions = models.Manager()
-
-
-
-
-
